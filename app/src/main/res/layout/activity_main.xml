@@ -20,14 +20,6 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <fragment
-        android:id="@+id/fragment_one"
-        android:name="com.project.practice.fragment.fragmentpractice.FragmentOne"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout="@layout/fragment_fragment_one"
-        android:layout_centerHorizontal="true"
-        />
 
 
     <Button

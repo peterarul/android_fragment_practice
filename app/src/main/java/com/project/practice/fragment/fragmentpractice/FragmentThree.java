@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 
 
-public class FragmentOne extends Fragment {
+public class FragmentThree extends Fragment {
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_fragment_one, container, false);
-
+        View view = inflater.inflate(R.layout.fragment_fragment_three, container, false);
         return view;
     }
 
