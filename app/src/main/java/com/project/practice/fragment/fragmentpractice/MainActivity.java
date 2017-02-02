@@ -19,10 +19,21 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Fragment fragment = null;
-                if(v == findViewById(R.id.button)){
+                switch (v.getId()) {
+                    case  R.id.button: {
                         fragment = new FragmentOne();
-                } else {
-                    fragment = new FragmentTwo();
+                        break;
+                    }
+
+                    case R.id.button2: {
+                        fragment = new FragmentTwo();
+                        break;
+                    }
+                    case R.id.button3: {
+                        fragment = new FragmentThree();
+                        break;
+                    }
+
                 }
                 FragmentManager manage = getSupportFragmentManager();
                 FragmentTransaction transaction = manage.beginTransaction();
@@ -34,5 +45,7 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(listener);
         Button btn2 = (Button)findViewById(R.id.button2);
         btn2.setOnClickListener(listener);
+        Button btn3 = (Button)findViewById(R.id.button3);
+        btn3.setOnClickListener(listener);
     }
 }
